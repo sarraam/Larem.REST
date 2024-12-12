@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+        
+body{
+    height: 100vh;
+    background-image: url("img/menupage.png");
+    background-size: cover;
+    background-position: center;
+       
+  
+}
+a{
+    text-decoration: none;
+    color: #daa520;
+}
+
+header{
+    position: flex;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    font-size: 30px;
+    float: left;
+    padding: px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li {
+    margin-right: 30px;
+}
+
+header ul li a:hover, .active{
+    background: #daa520; 
+    color: #f9fdff;
+}
+header ul li a{
+    padding: 6px 15px;
+   border-radius: 20px;
+
+}
+h2{
+    text-align: center;
+    color: #f9fdff;   
+}
+.all-cards{
+width: 95%;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+flex-wrap: wrap;
+}
+.card{
+    width: 25%;
+    text-align: center;
+    background-color: #daa520;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35)0px 5px 15px;
+}
+.card:hover{
+    transform: scale(1.02);
+}
+.card img{
+    width: 50%;
+    height: 180px;
+    padding-top: 10px;
+}
+.card h3{
+    color: #f9fdff;
+}
+button{
+  width: 50px;
+  height: 30px;
+  font-size: 15px;
+  color: #daa520;
+  background-color: transparent;
+  border: 2px solid #daa520 ;
+  border-radius: 20px;
+}
+.footer .box{
+    flex: 1 1 25rem;
+    text-align: center;
+    background-color: #d4ab43;
+    color: #f9fdff;
+}
+.footer .box h3{
+    color: #f9fdff;
+    padding: 1rem 0;
+}
+.footer .box a{
+    display: block;
+    color: #f9fdff;
+    padding: 1rem 0;
+}
+.social{
+    display: flex;
+    padding: 1rem 0;
+    justify-content: center;
+}
+
+</style>
+<title>Menu</title>
+</head>
+<script src="https://kit.fontawesome.com/9e1603ebb1.js" crossorigin="anonymous"></script>
+<body>
+<header>
+<h1><a href="#" class="logo">Larem</a></h1>
+<nav class="navbar">
+<ul>
+    <li><a href="Home.html">Home</a></li>
+    <li> <a href="Menu.html" class="active"> Menu</a></li>
+    <li><a href="#contact">contact</a></li>
+</ul>
+</nav>
+</header> 
+<section class="OurMenu">
+    <i><h2>Larem Menu</h2></i>
+    <div class="all-cards">
+        <div class="card">
+            <img src="img/menu.png" alt="">
+            <h3>Chicken rice</h3>
+            <span>19.99 RS</span>
+        </div>
+        <div class="card">
+            <img src="img/menu1.png"alt="">
+            <h3>Vege Ramion</h3>
+            <span>13 RS</span>
+        </div>
+        <div class="card">
+            <img src="img/menu2.png" alt="">
+            <h3>BBQ</h3>
+            <span>60.99 RS</span>
+        </div>
+        <div class="card">
+            <img src="img/menu3.png" alt="">
+            <h3>Sushi</h3>
+            <span>35 RS</span>
+        </div>
+        <div class="card">
+            <img src="img/menu4.png" alt="">
+            <h3>onion rings</h3>
+            <span>9.50 RS</span>
+        </div>
+        <div class="card">
+            <img src="img/menu6.png" alt="">
+            <h3>Salad</h3>
+            <span>17.99 RS</span>
+        </div>
+    </div>
+</section>
+
+
+</br>
+</br>
+<a href="Home.html"> &nbsp; &nbsp; &nbsp; <button type="button">Back</button></a>
+
+</br>  
+</br>
+</br>
+</br>  
+<section class="contact" id="contact">
+    
+    </section>
+
+    <section class="footer">
+
+        <div class="box">
+         <h3>Contact</br> </br>contact info</h3>
+         <a href="https://www.whatsapp.com/">+96656634590</a>
+         <a href="https://mail.google.com/">ilarem@gmail.com</a>
+         <a href="https://www.google.com/maps/">Tanwomah, KSA, 98764</a>
+         <br>
+         <div class="social">
+         <a href="https://www.instagram.com/">
+            <i class="fa-brands fa-instagram fa-2x"></i>
+        </a>
+         <a href="https://www.snapchat.com/">
+            <i class="fa-brands fa-snapchat fa-2x"></i>
+        </a>
+         <a href="https://www.facebook.com/">
+            <i class="fa fa-facebook fa-2x"></i>
+        </a>
+         <br>
+         <br>
+        </div>
+        </div>
+       </section>
+</body>
+</html>

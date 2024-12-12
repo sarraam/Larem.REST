@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+        
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #3b3c36;
+    background-size: cover;
+    background-position: center;
+}
+
+a{
+    text-decoration: none;
+    color: #daa520;
+}
+
+header{
+    position: flex;
+    top: 0; left: 0; right: 0;
+    background: #3b3c36;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .logo{
+    font-size: 30px;
+    float: left;
+    padding: px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li {
+    margin-right: 30px;
+}
+
+header ul li a:hover, .active{
+    background: #daa520; 
+    color: #f9fdff;
+}
+header ul li a{
+    padding: 6px 15px;
+   border-radius: 20px;
+
+}
+
+.content{
+    padding: 30px;
+    font-size: 120%;
+    color: #f5f5f5;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translateX(-20%); 
+}
+
+h2{
+    color: #daa520;
+}
+
+.right{
+    display: block;
+    margin-left: 50%;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 400px;
+    height:400px;
+    background-image: url("img/food2.png");
+    background-size: cover;
+    background-position: center;
+    background-color: #daa520;
+    padding: 40px;
+   border-radius: 180px;
+}
+
+#food2,#food3{
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin: 0px 20px;
+}
+
+#food2{
+    background-image: url('img/food2.png');
+}
+
+#food3{
+    background-image: url('img/food3.png');
+    
+}
+
+.menu{
+    display: flex;
+    margin: 0px 100px;
+}
+.footer .box{
+    flex: 1 1 25rem;
+    text-align: center;
+    background-color: #d4ab43;
+    color: #f5f5f5;
+}
+.footer .box h3{
+    color: #f9fdff;
+    padding: 1rem 0;
+}
+.footer .box a{
+    display: block;
+    color: #f9fdff;
+    padding: 1rem 0;
+}
+
+.social {
+    display: flex;
+    padding: 1rem 0;
+    justify-content: center;
+}
+</style>
+<title>Home</title>
+      
+    </head>
+    <script src="https://kit.fontawesome.com/9e1603ebb1.js" crossorigin="anonymous"></script>
+    <body>
+        <header>
+            <h1><a href="#" class="logo">Larem</a></h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Home.html" class="active"> Home</a></li>
+                    <li> <a href="Menu.html"> Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                </nav>
+
+        </header> 
+        <div class="parent">
+        <div class="content">
+            <h1>its not just Food, its an Experience.</h1>
+            <p>We have Delicious <b><sub>food</sub></b> tasty <em><sup>food</sup></em> in town. </p></br>
+            <h2>Our Chef Recommend </br> For Today :</h2>
+        </div>  
+    </div> 
+    
+    <div class="right" id="food"></div>
+
+    <div class="bottom">
+        <div class="menu">
+            <div id="food2"></div>
+            <div id="food3"></div>
+        </div>
+    </div>
+
+    <script>
+let food1s = document.getElementById('food2');
+let food2s = document.getElementById('food3');
+let foods = document.getElementById('food');
+
+food1s.addEventListener('click',()=>{
+    foods.style.backgroundImage="url('img/food2.png')";
+})
+
+food2s.addEventListener('click',()=>{
+    foods.style.backgroundImage="url('img/food3.png')";
+})
+    </script>
+    <br>
+    <br>
+    <video width="320" height="240" controls>
+        <source src="vid/vid.mp4" type="video/mp4">
+      </video>
+      <h2>Made with love</h2>
+
+<br>  
+<br>
+<br>
+<br>  
+<section class="contact" id="contact">
+    
+    </section>
+
+    <section class="contact" id="contact">
+    
+    </section>
+
+    <section class="footer">
+
+        <div class="box">
+         <h3>Contact</br> </br>contact info</h3>
+         <a href="https://www.whatsapp.com/">+96656634590</a>
+         <a href="https://mail.google.com/">ilarem@gmail.com</a>
+         <a href="https://www.google.com/maps/">Tanwomah, KSA, 98764</a>
+         <br>
+         <div class="social">
+         <a href="https://www.instagram.com/">
+            <i class="fa-brands fa-instagram fa-2x"></i>
+        </a>
+         <a href="https://www.snapchat.com/">
+            <i class="fa-brands fa-snapchat fa-2x"></i>
+        </a>
+         <a href="https://www.facebook.com/">
+            <i class="fa fa-facebook fa-2x"></i>
+        </a>
+         <br>
+         <br>
+        </div>
+        </div>
+       </section>
+</div>
+
+    </body>
+</html>
